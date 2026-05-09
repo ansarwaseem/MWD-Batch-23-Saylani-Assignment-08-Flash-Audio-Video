@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Task 1: Audio Player
+Create an audio player that:
+
+has controls
+uses preload="metadata"
+uses loop
+has 2 sources (mp3 + ogg)
+Output: Audio should repeat after finishing.
+
+Task 2: Video Player
+Create a video player that:
+
+has controls
+width should be 500
+uses poster="thumbnail.jpg"
+uses preload="none"
+has 2 sources (mp4 + webm)
+Output: Video should not download until user clicks play.
+
+Task 3: YouTube iFrame
+Embed a YouTube video using <iframe>:
+
+width: 560
+height: 315
+must include title
+must include loading="lazy"
+must include allowfullscreen -->
+
+    <h1>Audio</h1>
+    <audio controls preload="metadata" loop>
+      <source src="/audio_1.mp3" type="audio/mp3" />
+      <source src="/audio_1.ogg" type="audio/ogg" />
+      Sample Audio 1
+    </audio>
+    <hr />
+    <h1>Video</h1>
+    <video controls width="500" poster="/goku poster.jpg" preload="none">
+      <source src="/Goku.mp4" type="video/mp4" />
+      <source src="/Goku.webm" type="video/webm" />
+    </video>
+    <hr />
+    <h1>IFrame</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/rSc9xYPMAQY?si=DePT7yVieu5g8KQ6"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
